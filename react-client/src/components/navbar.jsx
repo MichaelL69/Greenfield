@@ -5,11 +5,11 @@ const NavbarComp = ({ clickHome, clickCreateEvent, clickMyEvents, clickLoginForm
   <div>
     <h2>Navbar</h2>
     <div>
-      <Button waves='light' onClick={clickHome}>Home</Button>
-      <Button waves='light' onClick={clickMyEvents}>MyEvents<Icon left>cloud</Icon></Button>
-      <Button waves='light' onClick={clickLoginForm}>Login<Icon right>cloud</Icon></Button>
-      <Button waves='light' onClick={clickSignupForm}>Signup<Icon right>cloud</Icon></Button>
-      <Button floating large className='green' waves='light' icon='add' onClick={clickCreateEvent} />
+      <Button className="navbar-button" waves="light" onClick={clickHome}>Home</Button>
+      <Button className="navbar-button" waves="light" onClick={clickMyEvents}>MyEvents<Icon left>cloud</Icon></Button>
+      <Button className="navbar-button" waves="light" onClick={clickLoginForm}>Login<Icon right>cloud</Icon></Button>
+      <Button className="navbar-button" waves="light" onClick={clickSignupForm}>Signup<Icon right>cloud</Icon></Button>
+      <Button floating large className="navbar-button" waves="light" icon="add" onClick={clickCreateEvent} />
     </div>
 
   </div>
@@ -18,7 +18,7 @@ const NavbarComp = ({ clickHome, clickCreateEvent, clickMyEvents, clickLoginForm
 export default NavbarComp;
 
 // export default () => (
-//   <Button waves='light'>
+//   <Button waves="light">
 //     <Icon>thumb_up</Icon>
 //   </Button>
 // )
