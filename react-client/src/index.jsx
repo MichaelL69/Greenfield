@@ -114,7 +114,7 @@ class App extends React.Component {
     } = this.state;
     if (view === 'main') {
       return (
-        <div>
+        <div className="container">
           <Loggedin username={username} loggedin={loggedin} />
           <NavbarComp clickHome={this.clickHome} clickCreateEvent={this.clickCreateEvent} clickMyEvents={this.clickMyEvents} clickLoginForm={this.clickLoginForm} clickSignupForm={this.clickSignupForm} clickSignout={this.clickSignout} />
           <Categories />
@@ -123,7 +123,7 @@ class App extends React.Component {
       );
     } if (view === 'eventPage') {
       return (
-        <div>
+        <div className="container">
           <Loggedin username={username} loggedin={loggedin} />
           <NavbarComp clickHome={this.clickHome} clickCreateEvent={this.clickCreateEvent} clickMyEvents={this.clickMyEvents} clickLoginForm={this.clickLoginForm} clickSignupForm={this.clickSignupForm} clickSignout={this.clickSignout} />
           <EventPage event={clickedEvent} />
@@ -131,7 +131,7 @@ class App extends React.Component {
       );
     } if (view === 'createEvent' && loggedin) {
       return (
-        <div>
+        <div className="container">
           <Loggedin username={username} loggedin={loggedin} />
           <NavbarComp clickHome={this.clickHome} clickCreateEvent={this.clickCreateEvent} clickMyEvents={this.clickMyEvents} clickLoginForm={this.clickLoginForm} clickSignupForm={this.clickSignupForm} clickSignout={this.clickSignout} />
           <CreateEvent />
@@ -140,7 +140,7 @@ class App extends React.Component {
       );
     } if (view === 'myEvents' && loggedin) {
       return (
-        <div>
+        <div className="container">
           <Loggedin username={username} loggedin={loggedin} />
           <NavbarComp clickHome={this.clickHome} clickCreateEvent={this.clickCreateEvent} clickMyEvents={this.clickMyEvents} clickLoginForm={this.clickLoginForm} clickSignupForm={this.clickSignupForm} clickSignout={this.clickSignout} />
           <MyEvents userID={userID} username={username} renderClickedEventTitle={this.renderClickedEventTitle} />
@@ -148,7 +148,7 @@ class App extends React.Component {
       );
     } if (view === 'loginForm') {
       return (
-        <div>
+        <div className="container">
           <Loggedin username={username} loggedin={loggedin} />
           <NavbarComp clickHome={this.clickHome} clickCreateEvent={this.clickCreateEvent} clickMyEvents={this.clickMyEvents} clickLoginForm={this.clickLoginForm} clickSignupForm={this.clickSignupForm} clickSignout={this.clickSignout} />
           <LoginForm redirect={this.clickMyEvents} setLoggedin={this.setLoggedin} setUserID={this.setUserID} />
@@ -156,7 +156,7 @@ class App extends React.Component {
       );
     } if (view === 'signupForm') {
       return (
-        <div>
+        <div className="container">
           <Loggedin username={username} loggedin={loggedin} />
           <NavbarComp clickHome={this.clickHome} clickCreateEvent={this.clickCreateEvent} clickMyEvents={this.clickMyEvents} clickLoginForm={this.clickLoginForm} clickSignupForm={this.clickSignupForm} clickSignout={this.clickSignout} />
           <SignupForm redirect={this.setUserID} redirect2nd={this.clickHome} />

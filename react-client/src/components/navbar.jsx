@@ -22,7 +22,7 @@ export default NavbarComp;
 //     <Icon>thumb_up</Icon>
 //   </Button>
 // )
-/*      
+/*
 <Modal
 header='Modal Header'
 trigger={<Button waves='light'>OR ME!<Icon right>insert_chart</Icon></Button>}>
