@@ -1,0 +1,11 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "type": "nodeDbg",
+      "name": "C:\\Users\\sheil\\Desktop\\2nd_immersion_work\\Projects\\Deploy-Greenfield",
+      "project": ""
+    }
+  ]
+}
