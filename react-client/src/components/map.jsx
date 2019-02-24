@@ -35,7 +35,7 @@ class Map extends React.Component {
     //   accessToken: mapboxgl.accessToken,
     // }));
 
-      // this supposedly load geoJSON data into some mapbox variable viable for later manipulation
+    // this supposedly load geoJSON data into some mapbox variable viable for later manipulation
     // map.on('style.load', () => {
     //   map.addSource('geojson', { type: 'geojson', data: '../mockGeoJson.geojson' });
     // });
