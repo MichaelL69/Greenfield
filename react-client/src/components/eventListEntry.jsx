@@ -4,7 +4,7 @@
 import React from 'react';
 
 const EventListEntry = ({ event, renderClickedEventTitle }) => (
-  <div>
+  <div className="event-list-entry">
     <h3 onClick={() => renderClickedEventTitle(event)}>{event.title}</h3>
     <h4>{event.category}</h4>
     <p>{event.description}</p>
